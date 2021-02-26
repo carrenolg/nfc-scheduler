@@ -7,7 +7,5 @@ services:
     build:
       context: ./services/flask
       dockerfile: Dockerfile
-    env_file: 
-      - ./services/flask/.env
     ports: 
       - 8080:8080
