@@ -13,6 +13,7 @@ apsscheduler = APScheduler()
 def index():
     return "Welcome to the scheduler!"
 
+
 def scheduled_task():
     # get data from google drive
     data_file = drive.get_data_file()
@@ -24,6 +25,7 @@ def scheduled_task():
     spreadsheet.create(result_data)
     # send email with spreadsheet attached, path= utils/
     gmail.send()
+
 
 def counter():
     print("1")
