@@ -51,8 +51,8 @@ def send():
     service = build('gmail', 'v1', credentials=credentials)
 
     # create message
-    emails = ['marlene.ortiz@naviera.com.co', 'marleneortizrivera@gmail.com', 'marle.rivera@yahoo.es']
-    # emails = ['giovanet.0313@gmail.com']
+    # emails = ['marlene.ortiz@naviera.com.co', 'marleneortizrivera@gmail.com', 'marle.rivera@yahoo.es']
+    emails = ['giovanet.0313@gmail.com']
     message = create_message('carrenolg@gmail.com', emails, 'NFC Operaciones')
     respond = send_message(service, 'me', message)
     # respond = None
