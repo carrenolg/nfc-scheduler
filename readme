@@ -1,0 +1,13 @@
+# start containers
+# first time
+$ docker-compose -f docker-compose.yml up -d
+
+# changes
+$ docker-compose -f docker-compose.yml up -d --build
+
+# docker clear docker logs
+$ sudo truncate -s 0 $(docker inspect --format='{{.LogPath}}' <id_container>)
+
+# run local
+$ export FLASK_APP=app.py
+$ python3 app.py

@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  flask:
+    container_name: tugsScheduler 
+    restart: always
+    build:
+      context: ./services/flask
+      dockerfile: Dockerfile
+    env_file: 
+      - ./services/flask/.env
+    ports: 
+      - 8080:8080
