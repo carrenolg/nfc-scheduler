@@ -26,5 +26,5 @@ $ python3 app.py
 # run main.py (no flask)
 $ python3 main.py
 
-# scp local to remote
+# scp local to remote (copy credentials)
 $ scp file.txt remote_username@10.10.0.2:/remote/directory
