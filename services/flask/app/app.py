@@ -32,7 +32,8 @@ def counter():
 
 
 if __name__ == '__main__':
-    apsscheduler.add_job(id='Scheduled task', func=scheduled_task, trigger='cron', day_of_week=0)
-    # apsscheduler.add_job(id='Scheduled task', func=counter, trigger='interval', seconds = 5)
+    # apsscheduler.add_job(id='Scheduled task', func=scheduled_task, trigger='cron', day_of_week=0)
+    apsscheduler.add_job(id='Scheduled task', func=scheduled_task, trigger='interval', seconds = 60)
     apsscheduler.start()
-    app.run(host='0.0.0.0', port=8080, debug=False)
+    app.run(host='0.0.0.0', port=8080, debug=True)
+    # app.run(host='0.0.0.0', port=8080, debug=False)
