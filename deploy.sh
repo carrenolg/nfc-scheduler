@@ -31,4 +31,4 @@ $ python3 app.py
 $ python3 main.py
 
 # scp local to remote (copy credentials)
-$ scp -r auth/ remote_username@10.10.0.2:/remote/directory
+$ scp -r auth/ remote_username@10.10.0.2:/home/ubuntu/app/nfc-scheduler/services/flask/app
