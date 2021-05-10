@@ -12,6 +12,8 @@ $ sudo truncate -s 0 $(docker inspect --format='{{.LogPath}}' <id_container>)
 docker system prune -a
 
 # get json file credentials from (https://console.cloud.google.com/)
+# API y servicios - Credenciales
+# dowload  ID de clientes OAuth 2.0 section
 file: auth/credencials-nfc.json
 
 
