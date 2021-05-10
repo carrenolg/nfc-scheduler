@@ -32,5 +32,9 @@ $ python3 app.py
 # run main.py (no flask)
 $ python3 main.py
 
+# deactive virtual env (python3) (from folder project ex: ~/cs/projects/nfc-scheduler/ )
+$ deactive
+
 # scp local to remote (copy credentials)
 $ scp -r auth/ remote_username@10.10.0.2:/home/ubuntu/app/nfc-scheduler/services/flask/app
+# scp -r auth/ ubuntu@54.160.206.102:/home/ubuntu/app/nfc-scheduler/services/flask/app
